@@ -14,6 +14,7 @@
 
 <script>
 import avatar from '@/components/Avatar'
+import Auth from '@/api/auth'
 
 export default {
   components: {
@@ -21,7 +22,10 @@ export default {
   },
   methods: {
     onLogout() {
-      console.log('logout')
+      Auth.logout()
+        .then(res => {
+          console.log(res)
+        })
     }
   }
 }
