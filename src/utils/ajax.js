@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { baseUrl } from './config-baseUrl'
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-axios.defaults.baseURL = 'http://note-server.hunger-valley.com/'
+axios.defaults.baseURL = baseUrl
 axios.defaults.withCredentials = true
 
 export default function ajax(url, method = 'GET', data = {}) {
