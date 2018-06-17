@@ -1,23 +1,25 @@
-import ajax from '@/utils/ajax.js'
+import request from '@/helpers/request'
 
-const url = {
-  register: 'auth/register',
-  login: 'auth/login',
-  logout: 'auth/logout',
-  get_info: 'auth'
+const URL = {
+  REGISTER: 'user/register',
+  LOGIN: 'user/login',
+  LOGOUT: 'user/logout',
+  GET_INFO: 'user'
 }
 
+window.r = request
+
 export default {
-  register(username, password) {
-    return ajax(url.register, 'POST', {username, password})
+  register({ username, password }) {
+    return request(URL.REGISTER, 'POST', { username, password })
   },
-  login(username, password) {
-    return ajax(url.login, 'POST', {username, password})
+  login({ username, password }) {
+    return request(URL.LOGIN, 'POST', { username, password })
   },
   logout() {
-    return ajax(url.logout)
+    return request(URL.LOGOUT)
   },
   getInfo() {
-    return ajax(url.get_info)
+    return request(URL.GET_INFO)
   }
 }
