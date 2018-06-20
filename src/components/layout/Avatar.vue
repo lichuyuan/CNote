@@ -42,11 +42,10 @@ export default {
     },
     imgUrl() {
       const u = baseUrl.slice(0, -7)
-      console.log(this.user)
       if (!this.user.avatar) {
-        return `${u}static/img/default.png`
+        return `${u}/static/img/default.png`
       } else {
-        return `${baseUrl}user/avatar/${this.user.avatar}`
+        return `${baseUrl}/user/avatar/${this.user.avatar}`
       }
     }
   },

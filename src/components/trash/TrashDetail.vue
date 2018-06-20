@@ -70,7 +70,6 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).then(() => {
-        console.log(this.curTrashNote)
         return this.deleteTrashNote({ note: this.curTrashNote })
       }).then(() => {
         this.setCurTrashNote()

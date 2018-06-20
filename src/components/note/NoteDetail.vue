@@ -97,7 +97,6 @@ export default {
       })
     }, 800),
     onDeleteNote() {
-      console.log(1)
       this.deleteNote({ noteId: this.curNote._id }).then(() => {
         this.setCurNote()
         this.$router.replace({

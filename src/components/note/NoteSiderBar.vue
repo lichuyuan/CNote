@@ -4,7 +4,7 @@
         <div class="ibox-content">
           <el-dropdown @command="handleCommand">
             <h3 class="el-dropdown-link">
-              {{ curBook.title }}<i class="el-icon-arrow-down el-icon--right"></i>
+              {{ curBook.title ? curBook.title : '暂无笔记本' }}<i class="el-icon-arrow-down el-icon--right"></i>
             </h3>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item v-for="nb in notebooks" :key="nb._id" :command="nb._id" :disabled="nb === curBook">{{ nb.title }}</el-dropdown-item>
@@ -112,7 +112,6 @@ export default {
   created() {
     this.getNotebooks()
       .then(() => {
-        console.log(this.$route.query.notebookId)
         this.setCurBook({ curBookId: this.$route.query.notebookId })
         return this.getNotes({ notebookId: this.curBook._id })
       }).then(() => {

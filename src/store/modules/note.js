@@ -44,7 +44,6 @@ const actions = {
   getNotes({ commit }, { notebookId }) {
     return Note.getAll({ notebookId })
       .then(res => {
-        console.log(notebookId, res)
         commit('setNotes', { notes: res.data })
       })
   },

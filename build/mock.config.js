@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const mockBaseUrl = 'http://localhost:5000/api/v1/'
+const mockBaseUrl = 'http://localhost:5000/api/v1'
 const realBaseUrl = 'http://111.231.93.141:5000/api/v1'
 
 exports.isDev = function(isDev = true) {
