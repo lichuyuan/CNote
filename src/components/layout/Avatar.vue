@@ -15,7 +15,7 @@
         <ul class="dropdown-menu animated fadeInRight m-t-xs">
           <li><a>修改头像</a></li>
           <li class="divider"></li>
-          <li><a>Logout</a></li>
+          <li @click="onLogout"><a>Logout</a></li>
         </ul>
     </div>
     <div class="logo-element">
@@ -50,6 +50,13 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+      'logout'
+    ]),
+    onLogout() {
+      this.logout()
+      this.$router.push('/')
+    },
   },
   created() {
   }

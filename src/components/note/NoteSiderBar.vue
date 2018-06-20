@@ -19,9 +19,8 @@
           </div>
           <ul class="sortable-list connectList agile-list">
             <router-link tag="li"  v-for="n in notes" :key="n.id" :to="`/note?noteId=${n._id}&notebookId=${curBook._id}`" exact-active-class="success-element">
-              {{ n.title }}
+              {{ n.title ? n.title : '无标题' }}
               <div class="agile-detail">
-                <i class="pull-right btn btn-xs btn-white">Tag</i>
                 <i class="fa fa-clock-o"></i> {{ n.friendlyUpdatedAt }}
               </div>
             </router-link>

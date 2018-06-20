@@ -103,6 +103,7 @@ export default {
           loginModal.remove('in')
           loginModal.remove('showLogin')
           this.$message.success('登录成功')
+          this.$router.push('/notebooks')
         }).catch(error => {
           this.login.isError = true
           this.login.notice = error.msg
@@ -131,6 +132,7 @@ export default {
         loginModal.remove('in')
         loginModal.remove('showLogin')
         this.$message.success('注册成功，已自动登录')
+        this.$router.push('/notebooks')
       }).catch(error => {
         this.register.isError = true
         this.register.notice = error.msg

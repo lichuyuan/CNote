@@ -19,9 +19,9 @@
         <table class="table table-hover" v-show="!showGuide">
           <tbody>
             <tr v-for="n in notebooks" @click="$router.push(`/note?notebookId=${ n._id }`)" style="cursor:pointer;">
-              <td class="project-status">
-                <span class="label label-primary">类型</span>
-              </td>
+              <!--<td class="project-status">-->
+                <!--<span class="label label-primary">类型</span>-->
+              <!--</td>-->
               <td class="project-title">
                 <a>{{ n.title }}</a>
                 <br/>
@@ -30,13 +30,13 @@
               <td class="project-completion">
                 <small>笔记总数：{{ n.note_counts }}</small>
                 <div class="progress progress-mini">
-                  <div style="width: 48%;" class="progress-bar"></div>
+                  <div :style="`width: ${n.note_counts}%`" class="progress-bar"></div>
                 </div>
               </td>
               <td class="project-people">
               </td>
               <td class="project-actions">
-                <a @click.stop="onDelete(n)" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Delete </a>
+                <a @click.stop="onDelete(n)" class="btn btn-white btn-sm"><i class="fa fa-trash"></i> Delete </a>
                 <a @click.stop="onEdit(n)" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
               </td>
             </tr>
@@ -60,6 +60,9 @@ export default {
     showGuide() {
       return this.notebooks.length === 0
     }
+  },
+  watch: {
+    '$route': 'getNotebooks'
   },
   methods: {
     ...mapActions([

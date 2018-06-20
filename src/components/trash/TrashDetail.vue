@@ -86,6 +86,7 @@ export default {
       this.revertTrashNote({ noteId: this.curTrashNote._id })
         .then(() => {
           this.setCurTrashNote()
+          this.$message.success('恢复笔记成功')
           this.$router.replace({
             path: '/trash',
             query: {

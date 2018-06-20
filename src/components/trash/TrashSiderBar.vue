@@ -4,10 +4,9 @@
         <div class="ibox-content">
           <h3>回收站</h3>
           <ul class="sortable-list connectList agile-list">
-            <router-link tag="li" v-for="n in trashNotes" :key="n._id" :to="`/trash?noteId=${n._id}`" exact-active-class="success-element">
-              {{ n.title }}
+            <router-link tag="li" v-for="n in trashNotes" :key="n._id" :to="`/trash?noteId=${n._id}`" exact-active-class="warning-element">
+              {{ n.title ? n.title : '无标题' }}
               <div class="agile-detail">
-                <i class="pull-right btn btn-xs btn-white">Tag</i>
                 <i class="fa fa-clock-o"></i> {{ n.friendlyUpdatedAt }}
               </div>
             </router-link>
