@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/components/Index'
-import Register from '@/components/Register'
 import NotebookList from '@/components/notebook/NotebookList'
 import NoteDetail from '@/components/note/NoteDetail'
 import TrashDetail from '@/components/trash/TrashDetail'

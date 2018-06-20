@@ -2,7 +2,7 @@
   <li class="nav-header">
     <div class="dropdown profile-element">
         <span>
-          <img alt="image" class="img-circle" :src="user.avatar === undefined ? 'http://localhost:5000/static/img/default.png':`http://localhost:5000/user/avatar/${ user.avatar }`" />
+          <img alt="image" class="img-circle" :src="imgUrl" />
         </span>
         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
           <span class="clear">
@@ -19,13 +19,14 @@
         </ul>
     </div>
     <div class="logo-element">
-      Note
+      CNote
     </div>
   </li>
 </template>
 
 <script>
 import { mapActions, mapGetters, mapMutations } from 'vuex'
+import { baseUrl } from '@/helpers/config-baseUrl'
 
 export default {
   data() {
@@ -38,6 +39,15 @@ export default {
     ]),
     username() {
       return this.user.username === undefined ? '未登录' : this.user.username
+    },
+    imgUrl() {
+      const u = baseUrl.slice(0, -7)
+      console.log(this.user)
+      if (!this.user.avatar) {
+        return `${u}static/img/default.png`
+      } else {
+        return `${baseUrl}user/avatar/${this.user.avatar}`
+      }
     }
   },
   methods: {
