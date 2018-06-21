@@ -33,39 +33,21 @@ npm run dev
 # 部分截图
 
 
-### 商铺列表页
+### 登录注销
 
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.gif" width="365" height="619"/>
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/login.gif" width="619" height="619"/>
 
+### 笔记本列表页
 
-### 商铺筛选页
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/notebook.gif" width="619" height="619"/>
 
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.gif" width="365" height="619"/>
+### 笔记页
 
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/note.gif" width="619" height="619"/>
 
+### 回收站页
 
-### 餐馆食品列表与购物车
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/shop_cart.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/shop_cart.gif" width="365" height="619"/>
-
-### 确认订单页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/confirm1.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/confirmOrder.gif" width="365" height="619"/>
-
-
-### 搜索页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/search.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/search.gif" width="365" height="619"/>
-
-
-### 登录页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/login1.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/login.gif" width="365" height="619"/>
-
-
-### 个人中心
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/profile.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/profile.gif" width="365" height="619"/>
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/trash.gif" width="619" height="619"/>
 
 
 # 项目布局
