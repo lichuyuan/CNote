@@ -35,19 +35,19 @@ npm run dev
 
 ### 登录注销
 
-<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/login.gif" width="1202" height="602"/>
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/login.gif" width="1202" height="444.74"/>
 
 ### 笔记本列表页
 
-<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/notebook.gif" width="1202" height="602"/>
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/notebook.gif" width="1202" height="444.74"/>
 
 ### 笔记页
 
-<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/note.gif" width="1202" height="602"/>
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/note.gif" width="1202" height="444.74"/>
 
 ### 回收站页
 
-<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/trash.gif" width="1202" height="602"/>
+<img src="https://github.com/lichuyuan/CNote/blob/master/screenshots/trash.gif" width="1202" height="444.74"/>
 
 
 # 项目布局
