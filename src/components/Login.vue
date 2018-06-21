@@ -21,7 +21,7 @@
                     <button class="btn btn-sm btn-primary pull-right m-t-n-xs" @click="onLogin">
                       <strong>登录</strong>
                     </button>
-                    <label :class="{error: login.isError}">{{ login.notice }}</label>
+                    <label :class="{error: login.isError}" style="font-size: 12px;">{{ login.notice }}</label>
                   </div>
                 </div>
                 <div class="col-sm-6 b-r">
@@ -43,7 +43,7 @@
                       <button class="btn btn-sm btn-primary pull-right m-t-n-xs" @click="onRegister">
                         <strong>注册</strong>
                       </button>
-                      <label :class="{error: login.isError}">{{ onRegister.notice }}</label>
+                      <label :class="{error: register.isError}" style="font-size: 12px;">{{ register.notice }}</label>
                     </div>
                   </div>
                 </div>
@@ -99,6 +99,8 @@ export default {
         .then(res => {
           this.login.isError = false
           this.login.notice = ''
+          this.login.username = ''
+          this.login.password = ''
           const loginModal = document.querySelector('#modal-form').classList
           loginModal.remove('in')
           loginModal.remove('showLogin')
@@ -106,7 +108,7 @@ export default {
           this.$router.push('/notebooks')
         }).catch(error => {
           this.login.isError = true
-          this.login.notice = error.msg
+          this.login.notice = error.message
       })
     },
     onRegister(){
@@ -128,14 +130,17 @@ export default {
       }).then(res => {
         this.register.isError = false
         this.register.notice = ''
+        this.register.username = ''
+        this.register.password = ''
         const loginModal = document.querySelector('#modal-form').classList
         loginModal.remove('in')
         loginModal.remove('showLogin')
         this.$message.success('注册成功，已自动登录')
         this.$router.push('/notebooks')
       }).catch(error => {
+        console.log('error', error)
         this.register.isError = true
-        this.register.notice = error.msg
+        this.register.notice = error.message
       })
     },
     showRegister() {

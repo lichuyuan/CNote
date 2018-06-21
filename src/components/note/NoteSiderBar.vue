@@ -106,6 +106,7 @@ export default {
             })
           })
       }
+      this.noteTitle = ''
     }
   },
   created() {

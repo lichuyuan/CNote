@@ -1,9 +1,4 @@
 {
-  "name": "vue-evernote-client",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "李初远 <functionlcy@gmail.com>",
-  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
