@@ -2,30 +2,25 @@
 
 vue + vuex + vue-router + axios + element-ui + less + es6
 
-
 ## 项目运行
 
 ```
-git clone https://github.com/bailicangdu/vue2-elm.git  
+git clone https://github.com/lichuyuan/CNote.git  
 
-cd vue2-elm
+cd CNote
 
-npm install  或 yarn(推荐)
+npm install
 
 npm run dev
 
 ```
 ## 另外
 
-此项目有配套的 API，[API项目地址](https://github.com/bailicangdu/node-elm)。
+此项目有配套的 API，[API项目地址](https://github.com/lichuyuan/CNoteAPI)。
 
 # 效果演示
 
-[请戳这里](http://cangdu.org/elm/)（请用chrome手机模式预览）
-
-### 移动端扫描下方二维码
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/ewm.png" width="250" height="250"/>
+[请戳这里](http://111.231.93.141)
 
 # 功能
 - [x] 登录注册注销 -- 完成
